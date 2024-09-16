@@ -70,6 +70,90 @@ DELETE http://localhost:3000/users/sign_in
 
 <H2>WHEN YOU ARE SIGNED IN THEN YOU CAN MAKE THE FULL CRUD OPERATION ON POSTS AND COMMENTS RELATED TO THE POSTS IF IT AUTHORIZED TO EDITE AND DELETE IT AND CAN CREATE POSTS OR COMMENTS TO A POST</H2>
 
+note <h4>if not you wan't be able to go in</h4>
+
+<h3>SHOW ALL POSTS</h3>
+
+GET http://localhost:3000/posts
+
+
+<h3>CREATE POSTS</h3>
+Tags at least one tag
+POST http://localhost:3000/posts
+
+<h3>
+{
+    "post":{
+    "title": "JAVA spring",
+    "body": "intro to JAVA",
+    "tags":["CODE","SPRING"]
+   
+}
+}
+</h3>
+
+<h3>UPDATE POSTS</h3>
+BUT YOU HAVE TO BE THE OWNER OF THE POST
+
+PATCH http://localhost:3000/posts/id_of_the_post
+
+<h3>
+{
+    "post":{
+    "title": "Python Django",
+    "body": "intro to Python",
+    "tags":["CODE","python"]
+   
+}
+}
+</h3>
+
+
+
+<h3>DELETE POSTS</h3>
+BUT YOU HAVE TO BE THE OWNER OF THE POST
+
+DELETE http://localhost:3000/posts/id_of_the_post
+
+
+
+
+<h3>SHOW ALL Comments</h3>
+
+GET http://localhost:3000/posts/post_id/comments
+
+
+<h3>CREATE comment</h3>
+
+POST http://localhost:3000/posts/post_id/comments
+
+<h3>
+{
+    "comment":{
+    "body": "intro to JAVA"   
+}
+}
+</h3>
+
+<h3>UPDATE comment</h3>
+BUT YOU HAVE TO BE THE OWNER OF THE comment
+
+PATCH http://localhost:3000/posts/id_of_the_post
+
+<h3>
+{
+    "comment":{
+    "body": "intro to python"   
+}
+}
+</h3>
+
+
+
+<h3>DELETE POSTS</h3>
+BUT YOU HAVE TO BE THE OWNER OF THE comment
+
+DELETE http://localhost:3000/posts/id_of_the_post/comments/comment_id
 
 
 
