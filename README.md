@@ -14,4 +14,47 @@
   <h4>docker-compose up</h4>
  
   
-  
+<h2>How to Use</h2>
+
+<h3>sign_up</h3>
+
+POST http://localhost:3000/users
+<h3>
+{
+  "user":{
+        "email" : "example@gmail.com",
+        "password":"123456"
+    }
+}
+ 
+</h3>
+note: the password minimum is 6 char
+
+
+<h3>sign_in</h3>
+
+POST http://localhost:3000/users
+<h3>
+{
+  "user":{
+        "email" : "example@gmail.com",
+        "password":"123456"
+    }
+}
+ 
+</h3>
+note: the password minimum is 6 char
+
+
+<h3>sign_in</h3>
+
+POST http://localhost:3000/users/sign_in
+<h3>
+{
+  "user":{
+        "email" : "example@gmail.com",
+        "password":"123456"
+    }
+}
+ 
+</h3>
