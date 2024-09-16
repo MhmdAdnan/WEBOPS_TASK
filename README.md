@@ -150,7 +150,7 @@ PATCH http://localhost:3000/posts/id_of_the_post
 
 
 
-<h3>DELETE POSTS</h3>
+<h3>DELETE comments</h3>
 BUT YOU HAVE TO BE THE OWNER OF THE comment
 
 DELETE http://localhost:3000/posts/id_of_the_post/comments/comment_id
