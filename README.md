@@ -156,4 +156,9 @@ BUT YOU HAVE TO BE THE OWNER OF THE comment
 DELETE http://localhost:3000/posts/id_of_the_post/comments/comment_id
 
 
+<h3>(to see the schedule post deletion)</h3>
+http://localhost:3000/sidekiq
+ 
+
+
 
